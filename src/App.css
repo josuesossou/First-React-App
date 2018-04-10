@@ -1,0 +1,16 @@
+.App {
+  width: 800px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%)
+}@media only screen and (max-width: 800px) {
+  .App{
+    width: 600px
+  }
+}@media only screen and (max-width: 600px) {
+  .App{
+    width: 100%
+  }
+}
+
+
