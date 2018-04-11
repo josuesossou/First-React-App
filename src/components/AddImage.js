@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ObjectID from "bson-objectid";
+import './AddImge.css';
 
 class AddImage extends Component {
 
@@ -25,13 +26,14 @@ class AddImage extends Component {
        }, ()=>{
             this.props.addImage(this.state.image)
        });
-
+    //    this.refs.image.value = "";
+    //    this.refs.header.value = "";
        e.preventDefault();
     }
 
   render() {
     return (
-      <div className="Card">
+      <div className="CardAdd">
         <form onSubmit={this.handleSubmit}>
             <div className="FormControl">
                 <input type="text" ref="header" placeholder="Add a heading"/>
@@ -39,7 +41,9 @@ class AddImage extends Component {
             <div className="FormControl">
                 <input type="text" ref="image" placeholder="Add a image link"/>
             </div>
-            <input type="submit"/>
+            <div className="FormControl">
+                <input type="submit" />
+            </div>
         </form>
       </div>
     );

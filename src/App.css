@@ -1,16 +1,29 @@
-.App {
+
+.FavImages, .AddImageForm {
   width: 800px;
-  position: relative;
   left: 50%;
   transform: translateX(-50%)
 }@media only screen and (max-width: 800px) {
-  .App{
+  .FavImages, .AddImageForm {
     width: 600px
   }
 }@media only screen and (max-width: 600px) {
-  .App{
+  .FavImages, .AddImageForm {
     width: 100%
   }
 }
 
+.FavImages{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.411)
+}
+
+.AddImageForm{
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  padding-bottom: .6rem;
+  padding-top: .3rem;
+  bottom: 0;
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, .2)
+}
 

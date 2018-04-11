@@ -2,4 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: url('https://images3.alphacoders.com/853/thumb-1920-85305.jpg') no-repeat center fixed;
+  background-size: cover;
+  background-blend-mode: overlay
 }

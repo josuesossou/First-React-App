@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FavoriteImage from './FavoriteImage';
+import './FavImgs.css';
 
 class FavoriteImages extends Component {
 

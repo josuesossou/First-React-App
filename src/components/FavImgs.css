@@ -1,0 +1,12 @@
+.FavImgs{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 1.5rem;
+    padding: 1rem
+}@media only screen and (max-width: 600px) {
+    .FavImgs{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
