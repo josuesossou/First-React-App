@@ -12,7 +12,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+a{
+    text-decoration: none;
+}
 .CardHead{
     width: 100%;
     border-bottom: 2px solid rgba(0, 0, 0, 0.5)
@@ -20,12 +22,12 @@
 .CardHead h3{
     margin-left: 1rem;
     line-height: 0%;
-    
 }
 
 .CardDelete{
     padding: .5rem;
     padding-left: 1rem;
     color: white;
-    background-color: rgba(248, 4, 4, 0.767)
+    background-color: rgba(248, 4, 4, 0.767);
+    cursor: pointer;
 }

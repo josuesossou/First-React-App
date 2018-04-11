@@ -12,7 +12,7 @@
     transform: translateX(-50%);
 }
 .CardAdd form input[type="text"]{
-    border: 1px outset rgba(0, 0, 0, 0.26);
+    border: 0px outset rgba(0, 0, 0, 0.26);
     border-radius: 0px;
     height: 100%;
     width: 100%;

@@ -4,23 +4,32 @@ import './FavImg.css';
 
 class FavoriteImage extends Component {
 
+
+  componentWillMount(){
+
+  }
+
   render() {
-    let width;
+    let cardBodyStyles;
     let cardBody = document.getElementsByClassName('CardBody');
     if(cardBody[0]===undefined){
-      console.log(document.getElementById('cardbb'))
+      cardBodyStyles = {
+        backgroundImage: this.props.image.image,
+         height:cardBody.clientWidth
+      }
     }else{
-      width = cardBody[0].clientWidth;
+      cardBodyStyles = {
+        backgroundImage: this.props.image.image,
+         height:cardBody[0].clientWidth
+      }
     }
     return (
       <div className="Card">
         <a href={this.props.image.link} target="_blank">
           <div className="CardHead"><h3>{this.props.image.header}</h3></div>
-          <div className="CardBody" id="cardbb" style={{backgroundImage: this.props.image.image, height:width}}></div>
+          <div className="CardBody" style={cardBodyStyles}></div>
         </a>
-        <a>
           <div className="CardDelete">Remove</div>
-        </a>
       </div>
     );
   }
